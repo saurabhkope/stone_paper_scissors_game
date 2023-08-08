@@ -95,7 +95,7 @@ body {
   
     .user-choice,
     .computer-choice {
-      padding: 5px; /* Adjust padding for mobile */
+      padding: 2px; /* Adjust padding for mobile */
     }
   
     .user-choice button {
