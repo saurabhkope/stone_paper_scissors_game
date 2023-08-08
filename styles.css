@@ -1,3 +1,5 @@
+/* Common styles for all screen sizes */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,24 +22,26 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  }
-  
-  .user-choice{
-    text-align: center;
-    padding: 10px;
-    background-color: #bceebc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .user-choice {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #bdecbe;
   }
   .computer-choice {
     text-align: center;
     padding: 10px;
-    background-color: #f3b6b1;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #f0b2b0;
   }
   
   .user-choice button {
@@ -74,14 +78,40 @@ body {
     margin: 0 auto;
   }
   
-  /* Add more styles and animations as desired */
-
-
-  /* footer section
-   */
-
-   footer {
+  /* Footer section */
+  
+  footer {
     text-align: center;
     margin-top: 20px;
     color: #666;
   }
+  
+  /* Styles for mobile screens */
+  
+  @media (max-width: 767px) {
+    .game-container {
+      padding: 10px; /* Adjust padding for mobile */
+    }
+  
+    .user-choice,
+    .computer-choice {
+      padding: 5px; /* Adjust padding for mobile */
+    }
+  
+    .user-choice button {
+      font-size: 16px; /* Adjust font size for mobile */
+      padding: 8px 15px; /* Adjust padding for mobile */
+    }
+  
+    .outcome {
+      font-size: 20px; /* Adjust font size for mobile */
+      margin-top: 10px; /* Adjust margin for mobile */
+    }
+  
+    .computer-image {
+      width: 100px; /* Adjust width for mobile */
+      height: 100px; /* Adjust height for mobile */
+      font-size: 40px; /* Adjust font size for mobile */
+    }
+  }
+  
