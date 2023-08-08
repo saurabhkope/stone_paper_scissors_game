@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  }
+  
+  .user-choice{
+    text-align: center;
+    padding: 10px;
+    background-color: #bceebc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .computer-choice {
+    text-align: center;
+    padding: 10px;
+    background-color: #f3b6b1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-choice button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .result {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .outcome {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .computer-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    margin: 0 auto;
+  }
+  
+  /* Add more styles and animations as desired */
+
+
+  /* footer section
+   */
+
+   footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+  }
