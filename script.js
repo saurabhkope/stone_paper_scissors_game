@@ -1,20 +1,22 @@
 function makeChoice(userChoice) {
-    const choices = ["stone", "paper", "scissors"];
-    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  const choices = ["stone", "paper", "scissors"];
+  const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  const outcome = getOutcome(userChoice, computerChoice);
+  const computerImage = document.getElementById("computerImage");
+  const computerChoiceElement = document.querySelector(".computer_choice_option");
   
-    const outcome = getOutcome(userChoice, computerChoice);
-    const computerImage = document.getElementById("computerImage");
-  
-    if (outcome === "win") {
-      computerImage.textContent = "😞";
-    } else if (outcome === "lose") {
-      computerImage.textContent = "🎉";
-    } else {
-      computerImage.textContent = "🤝";
-    }
-  
-    displayResult(outcome);
+  if (outcome === "win") {
+    computerImage.textContent = "😞";
+  } else if (outcome === "lose") {
+    computerImage.textContent = "🎉";
+  } else {
+    computerImage.textContent = "🤝";
   }
+  
+  computerChoiceElement.textContent = computerChoice; // Display computer's choice
+  
+  displayResult(outcome);
+}
   
   function getOutcome(userChoice, computerChoice) {
     if (
@@ -44,4 +46,3 @@ function makeChoice(userChoice) {
   
     resultElement.textContent = message;
   }
-  
